@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {box-sizing: border-box;}
+        nav {
+           overflow: hidden;
+           background-color: #000000;
+           padding: 10px;
+        }
+        .links {
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           font-weight: bold;
+           float: left;
+           color:rgb(255, 255, 255);
+           text-align: center;
+           padding: 12px;
+           text-decoration: none;
+           font-size: 18px;
+           line-height: 25px;
+           border-radius: 4px;
+        }
+        nav .logo {
+           font-size: 25px;
+           font-weight: bold;
+        }
+        nav .links:hover {
+           background-color: rgb(255, 0, 0);
+           color: rgb(0, 0, 0);
+        }
+        nav .selected {
+           background-color: rgba(255, 255, 255, 0.692);
+           color: rgb(0, 0, 0);
+        }
+        .rightSection {
+           float: right;
+        }
+        @media screen and (max-width: 870px) {
+           nav .links {
+              float: none;
+              display: block;
+              text-align: left;
+           }
+           .rightSection {
+              float: none;
+           }
+        }
+        </style>
+        </head>
+        <body>
+        <nav>
+        <a class="links logo" href="#">logo</a>
+        <div class="rightSection">
+        <a class="selected links" href="#">Home</a>
+        <a class="links" href="#">Contact Us</a>
+        <a class="links" href="#">About Us</a>
+        </nav>
+        </body>
+        </html>
